@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+
+</head>
+
+<body>
+    <main class="container-fluid">
+        <h1 class="text-center display-1">Central- <span class="text-danger">V</span> </h1>
+
+        <hr class="mb-4">
+
+        <div class="row">
+            <div col-lg-12>
+                <table id="id_table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Nome
+                            </th>
+                            <th>
+                                Descrição
+                            </th>
+                            <th>
+                                URL
+                            </th>
+                            <th>
+                                Caminho
+                            </th>
+                            <th>
+                                Data
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" id="id_modal_caminho">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center text-danger">Caminho</h5>
+                        <button type="button" class="btn btn-danger" onclick="controleModalCaminho('id_modal_caminho')">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <p class="" id="id_conteudo_caminho"></p>
+                            </div>
+                        </div>
+                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/db/exemplosDb.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+        carregarTabela(lstExemplos)
+    </script>
+
+
+</body>
+
+</html>

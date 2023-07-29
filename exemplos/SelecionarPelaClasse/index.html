@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Elemento Por Classe</title>
+    <style>
+        label{
+            display: block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dados do Cliente</h1>
+    <h2>Selecionando Elementos Pela Classe!!!</h2>
+    <hr>
+    
+    <label for="id_nome">Nome</label>
+    <input type="text" name="n_nome" id="id_nome" class="dados_cliente">
+
+    <label for="id_idade">Idade</label>
+    <input type="text" name="n_idade" id="id_idade" class="dados_cliente">
+
+    <label for="id_email">E-mail</label>
+    <input type="text" name="n_email" id="id_email" class="dados_cliente">
+
+    <br>
+    <br>
+
+    <button onclick="funcSelecionar()">Selecionar</button>
+    <br>
+    <div id="id_resultado">
+
+    </div>
+
+    <script>   
+
+    
+    const funcSelecionar = () =>{
+
+        let lstDados = document.getElementsByClassName("dados_cliente") // Selecionando elementos pela classe!
+
+        let areaResultado = document.getElementById("id_resultado")
+
+        for(x = 0; x <= lstDados.length - 1; x++){
+            areaResultado.innerHTML = `${areaResultado.innerHTML} ${lstDados[x].value}`                
+        }
+
+    }    
+    
+    </script>
+    
+</body>
+</html>
