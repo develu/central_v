@@ -1,0 +1,9 @@
+document.getElementById('id_btn_laranja').addEventListener('click',function(){
+    document.querySelector('body').setAttribute('class','laranja');
+})
+document.getElementById('id_btn_vermelho').addEventListener('click',function(){
+    document.querySelector('body').setAttribute('class','vermelho');
+})
+document.getElementById('id_btn_purpura').addEventListener('click',function(){
+    document.querySelector('body').setAttribute('class','purpura');
+})
