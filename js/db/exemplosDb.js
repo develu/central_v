@@ -42,6 +42,15 @@ const lstExemplos = [
         "data": "21/08/2023"
 
     },
-       
+      {
+         "id": 5,
+        "nome": "projeto_cep",
+        "descrição": "Validação de formulário",
+        "url": "<a href='/exemplos/projeto_cep/index.html' target='_blank'>Ir</a>",
+        "caminho": String.raw`<button class='btn btn-primary' onclick='visualizarCaminho("C:\\dev\\projetos\\htmlCssJavascript\\central_v\\exemplos\\projeto_cep")' >Visualizar</button>`,                
+        "data": "21/08/2023"
 
+    },
+    
+    
 ]
