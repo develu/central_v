@@ -54,12 +54,12 @@ const lstExemplos = [
       {
          "id": 6,
         "nome": "projeto_pizzaria",
-        "descrição": "Site de uma pizzari",
-        "url": "<a href='/exemplos/projeto_pizzaria/index.html' target='_blank'>Ir</a>",
+        "descrição": "Site de uma pizzaria",
+        "url": "<a href='/exemplos/projeto_pizzaria/html/index.html' target='_blank'>Ir</a>",
         "caminho": String.raw`<button class='btn btn-primary' onclick='visualizarCaminho("C:\\dev\\projetos\\htmlCssJavascript\\central_v\\exemplos\\projeto_pizzaria")' >Visualizar</button>`,                
         "data": "11/09/2023"
 
-    },
+    },                                                                                
     
                                                              
 ]
